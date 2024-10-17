@@ -1,7 +1,9 @@
+let interval = "";
+const carGif = document.getElementById('car')
+
 function driveCar(){
     let speed = 1
-    const carGif = document.getElementById('car')
-    const interval = setInterval(()=>{
+     interval = setInterval(()=>{
         speed += 10
         carGif.style.left = speed + 'px'
         
@@ -9,6 +11,10 @@ function driveCar(){
             speed = 1
         }
         console.log(speed);
-    },100)
+    },20)
 }
 driveCar()
+
+function control(){
+    clearInterval(interval)
+}
