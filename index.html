@@ -15,10 +15,31 @@
         position: relative;
         height: 100%;
     }
+    .signal{
+        position: absolute;
+        top: 10px;
+        z-index: 100;
+        right: 0px;
+    }
+    #control{
+        padding: 10px;
+        position: absolute;
+        top: 30px;
+        left: 40px;
+        width: 10%;
+        font-size: 20px;
+        background-color: tomato;
+        color: white;
+        border: 1px solid black;
+        border-radius: 20px;
+    }
 </style>
 <body>
 
     <div style="position: relative; height: 100vh;">
+        <button id="control">stop</button>
+        <img class="signal" src="https://editablegifs.com/gifs/gifs/traffic-lights-red/output.gif" alt="">
+
         <div style="position: absolute; bottom: 0 ; z-index: 100;">
             <img src="https://media4.giphy.com/media/nqKGxMxYzCE8jje7bA/giphy.gif?cid=6c09b952i9jvvckgv0zhpir0neo4hky47uwgp15vjoykmmfb&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s" alt="">
         </div>
