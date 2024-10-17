@@ -9,12 +9,12 @@ let isManualStop = false
 function driveCar(){
      
     interval = setInterval(()=>{
-        speed += 5
-        carGif.style.left = speed + 'px'
-        if(carGif.style.left == '971px'){
+        speed += 1
+        carGif.style.left = speed + '%'
+        if(carGif.style.left == '70%'){
             speed = 1
         }
-    },20)
+    },60)
 }
 driveCar()
 
@@ -62,6 +62,7 @@ function control(){
     }
     else{
         clearInterval(interval)
+        clearInterval(signalInterval)
         driveCar()
         ChangeSignal()
         btn.innerText = 'Stop'
