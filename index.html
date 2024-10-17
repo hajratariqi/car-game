@@ -16,31 +16,33 @@
         height: 100%;
         z-index: -100;
     }
-    .signal{
+    #signal{
         position: absolute;
         top: 10px;
         z-index: 100;
+        width: 200px;
         right: 0px;
     }
     #control{
-        padding: 10px;
+        width: 120px;
+        height: 120px;
+        padding: 20px;
         position: absolute;
         top: 30px;
         left: 40px;
-        width: 10%;
+        text-align: center;
         font-size: 20px;
-        background-color: green;
+        background-color: green ;
         color: white;
         border: 1px solid black;
-        border-radius: 20px;
+        border-radius: 100px;
     }
 </style>
 <body>
 
     <div style="position: relative; height: 100vh;">
         <button id="control" onclick="control()">stop</button>
-        <img class="signal" src="https://editablegifs.com/gifs/gifs/traffic-lights-red/output.gif" alt="">
-
+        <img id="signal" src="https://pngimg.com/d/traffic_light_PNG56263.png"/>
         <div id="car"  style="position: absolute; bottom: 0 ; z-index: 100;">
             <img width="300px" src="https://www.clipartmax.com/png/full/95-953054_blue-car-clipart-person-clipart-car-clipart-png.png" alt="">
         </div>
